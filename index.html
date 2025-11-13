@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yolia - Acompañamos a niñas y adolescentes en situación de riesgo en la Ciudad de México." />
+  <title>Yolia Remodel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero {
+      color: rgb(249, 245, 255);
+      background-image: url(images/Screenshot\ 2025-11-13\ 114526.png);
+      height: 60vh;
+      width: 100vh;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      padding: 4rem 1rem;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: rgb(204, 126, 133);
+    }
+    .program-card img {
+      border-radius: 10px 10px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: rgb(204, 126, 133);
+      color: white;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .btn-dona {
+background-color: rgb(204, 126, 133);
+border-color: rgb(204, 126, 133);
+color: white;
+    }
+    .coral {
+color: rgb(204, 126, 133);
+font-size: large;
+font-style: bold;
+    }
+    .border {
+  border-top: 2px solid rgb(91, 192, 235);
+  border-bottom: 2px solid rgb(91, 192, 235);
+  border-left: 2px solid rgb(91, 192, 235);
+  border-right: 2px solid rgb(91, 192, 235);
+  padding: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Yolia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apoya">Cómo Apoyar</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-2, btn-dona" href="#dona">Dona</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay container border">
+      <h1 class="display-4 fw-bold">Acompañamos a niñas y adolescentes en situación de riesgo</h1>
+      <p class="lead mb-4">Brindamos apoyo, educación y oportunidades en la Ciudad de México desde 1994.</p>
+      <a href="#dona" class="btn btn-primary btn-lg me-2, btn-dona">Dona ahora</a>
+      <a href="#apoya" class="btn btn-outline-light btn-lg">Conviértete en voluntario</a>
+    </div>
+  </section>
+
+  <section id="programas" class="py-5 bg-light">
+    <div class="container text-center border">
+      <h2 class="section-title">Nuestros Programas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="images/Screenshot 2025-11-13 123413.png" class="card-img-top" alt="Residencia Juvenil">
+            <div class="card-body">
+              <h5 class="card-title">Residencia Juvenil</h5>
+              <p class="card-text">Acompañamiento integral para niñas y adolescentes que requieren un espacio seguro para desarrollarse plenamente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="images/Screenshot 2025-11-13 123429.png" class="card-img-top" alt="Intervención en Calle">
+            <div class="card-body">
+              <h5 class="card-title">Intervención en Calle</h5>
+              <p class="card-text">Apoyo directo a niñas y adolescentes que viven o trabajan en las calles, generando vínculos y confianza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="images/Screenshot 2025-11-13 123445.png" class="card-img-top" alt="Centro Juvenil">
+            <div class="card-body">
+              <h5 class="card-title">Centro Juvenil</h5>
+              <p class="card-text">Espacio educativo y recreativo que promueve el aprendizaje, la convivencia y la inclusión social.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impacto" class="py-5">
+    <div class="container text-center border">
+      <h2 class="section-title">Nuestro Impacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <h3 class="fw-bold, coral" style="font-size: 75px"><strong>n+</strong></h3>
+          <p>Niñas acompañadas anualmente</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold, coral" style="font-size: 75px"><strong>n</strong></h3>
+          <p>Graduadas de programas educativos</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold, coral" style="font-size: 75px"><strong>n%</strong></h3>
+          <p>Reportan mejora en bienestar emocional</p>
+        </div>
+      </div>
+      <a href="https://yolia.org.mx/wp-content/uploads/2024/05/InformeAnual2024.pdf" class="btn btn-outline mt-3 coral">Ver Informe Anual 2024</a>
+    </div>
+  </section>
+
+  <section id="apoya" class="py-5 bg-light">
+    <div class="container text-center border">
+      <h2 class="section-title">Cómo Puedes Apoyar</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Dona</h5>
+              <p>Apoya nuestros programas mediante una donación única o recurrente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Sé Voluntario</h5>
+              <p>Forma parte de nuestras actividades y acompaña a las niñas en su proceso de crecimiento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Difunde</h5>
+              <p>Comparte nuestra misión en tus redes sociales y ayúdanos a llegar a más personas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="dona" href="https://www.paypal.com/donate/?hosted_button_id=FGVZJBP2FJ6JC" class="btn btn-primary btn-lg mt-4 btn-dona">Dona con PayPal</a>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1 fw-bold">Yolia A.C. © 2025</p>
+      <p>Callejón de Guadalupe 8, Col. Las Águilas, Álvaro Obregón, CDMX</p>
+      <p><a href="mailto:contacto@yolia.org.mx">contacto@yolia.org.mx</a> | <a href="https://wa.me/525511223344">WhatsApp</a></p>
+      <p><a href="https://yolia.org.mx/politica-privacidad/">Aviso de Privacidad</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
