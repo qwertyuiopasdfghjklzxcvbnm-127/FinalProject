@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yolia Remodel</title>
   <link rel="stylesheet" href="css/style.css">
+  <head>
+  <meta charset="UTF-8">
+  <title>Yolia</title>
+  <link rel="stylesheet" href="https://use.typekit.net/kxq3unj.css">
+</head>
+
 </head>
 <body>
 <header>
@@ -21,29 +27,20 @@
     </ul>
 </nav>
 </header>
-<img src="images/Screenshot 2025-11-17 144952.png" alt="Yolia niñas" class="hero-img">
+<p></p>
+<p></p>
+<p></p>
+<section class="hero-wrap bg-yellow-soft">
+    <img src="images/Screenshot 2025-11-13 114526.png" alt="Yolia niñas" class="wrap-image">
 
-<div class="hero-text">
-  <img src="images/Logo-Yolia-2023.jpg" width="500px" height="300px">
-  <p>Somos una institucion dedicada a brindar atencion integral a ninas, ninos, adolescentes, y jovenes que viven en contextos de vulnerabilidad familiar, social y economica, mediante a la pedagogia de San Juan Bosco. Nuestro objetivo es darles erramientas que les permitan enfrentar los riesgos presentes en su entorno.</p>
-</div>
-<section class="bg-green">
-<div class="hero-actions">
-  <a href="#dona" class="btn-dona-solid" style="align-items: center;">Dona ahora</a>
+    <p>
+        Somos una institución dedicada a brindar atención integral a niñas, niños, adolescentes y jóvenes que viven en contextos de vulnerabilidad familiar, social y económica, mediante la pedagogía de San Juan Bosco. Nuestro objetivo es brindarles herramientas para enfrentar los riesgos presentes en su entorno.
+    </p>
+    <p>
+      <a href="#dona" class="btn-dona-solid" style="align-items: center;">Dona ahora</a>
   <a href="#footer" class="btn-dona-outline" style="align-items: center;">Conviértete en voluntario</a>
-</div>
+    </p>
 </section>
-
-<script>
-  document.getElementById("btn-dona").onclick = () => {
-  window.location.href = "donar.html";
-};
-
-document.getElementById("btn-voluntario").onclick = () => {
-  window.location.href = "voluntarios.html";
-};
-
-</script>
 
 <section class="bg-orange-soft">
   <div class="container">
@@ -128,6 +125,29 @@ document.getElementById("btn-voluntario").onclick = () => {
   </div>
 </section>
 
+    <h2>Donación Rápida</h2>
+
+    <form id="donationForm">
+      <label>Cantidad:</label>
+      <div class="amount-options">
+        <label><input type="radio" name="amount" value="100">$100MX</label>
+        <label><input type="radio" name="amount" value="200">$200MX</label>
+        <label><input type="radio" name="amount" value="500">$500MX</label>
+        <label><input type="radio" name="amount" value="other">Otro</label>
+      </div>
+
+      <input type="number" id="otherAmount" placeholder="Ingresa otra cantidad" style="display:none;">
+
+      <label>Correo electrónico:</label>
+      <input type="email" required placeholder="tuemail@example.com">
+
+      <button type="submit" class="submit-btn">Donar</button>
+    </form>
+
+  </div>
+</div>
+
+
 <footer class="footer" id="footer">
   2025 Todos los derechos reservados. Yolia
   <p>Av. Hidalgo No. 19
@@ -138,6 +158,34 @@ C.P. 01408</p>
 <p><a href="mailto:contacto@yolia.org.mx">contacto@yolia.org.mx</a><p></p><a href="https://api.whatsapp.com/send/?phone=525511223344&text&type=phone_number&app_absent=0">WhatsApp</a></p>
 <p><a href="https://yolia.org.mx/politica-privacidad/">Aviso de Privacidad</a></p>
 </footer>
+<script>
+  const modal = document.getElementById("donationModal");
+  const donateBtn = document.getElementById("donarBtn"); // your Dona Ahora button ID
+  const closeBtn = document.querySelector(".close");
+  const otherAmountInput = document.getElementById("otherAmount");
+  const amountRadios = document.getElementsByName("amount");
+
+  // OPEN MODAL
+  donateBtn.onclick = () => modal.style.display = "block";
+
+  // CLOSE MODAL
+  closeBtn.onclick = () => modal.style.display = "none";
+
+  // CLOSE IF CLICK OUTSIDE BOX
+  window.onclick = e => { if (e.target === modal) modal.style.display = "none"; }
+
+  // SHOW CUSTOM AMOUNT
+  amountRadios.forEach(radio => {
+    radio.addEventListener("change", e => {
+      if (e.target.value === "other") {
+        otherAmountInput.style.display = "block";
+      } else {
+        otherAmountInput.style.display = "none";
+      }
+    });
+  });
+</script>
+
 </body>
 
 
